@@ -192,7 +192,7 @@ if (isset($_GET["reseller"])){ $res = $_GET["reseller"]; }else{ $res = ""; }
         case 'updalertdd':
             require_once("controllers/AlertController.php");
             //$adb=new mysqli('localhost', 'root', 'CC@i0f;&d=+r8I$', 're-lima1-mysql');
-            $adb=new mysqli('localhost', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
+            $adb=new mysqli('intranet.tecnicom.pe:3306', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
             $adb->query("SET NAMES 'utf8'");
             $sql = "DELETE FROM derivados WHERE AGENT='1' ORDER BY ID DESC LIMIT 1";
             $adb->query($sql);

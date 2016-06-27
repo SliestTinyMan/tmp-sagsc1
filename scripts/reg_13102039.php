@@ -11,7 +11,7 @@ $hora = date("H").":".date("i");;
 $fecha = date("d")."/".date("m")."/".date("Y");
 
 //$con=new mysqli("localhost", "root", "CC@i0f;&d=+r8I$", "re-lima1-mysql");
-$con=new mysqli('localhost', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
+$con=new mysqli('intranet.tecnicom.pe:3306', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
 $con->query("SET NAMES 'utf8'");
 
 $sql = "SELECT * FROM usuarios WHERE DOCUMENTO='".$documento."'";

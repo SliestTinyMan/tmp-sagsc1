@@ -3,7 +3,7 @@
 $documento = $_POST["documento"];
 
 //$con=new mysqli("localhost", "lima1sagsc", "kqP6didD53kT", "SAG_SC_LIMA1");
-$con=new mysqli('localhost', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
+$con=new mysqli('intranet.tecnicom.pe:3306', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
 $con->query("SET NAMES 'utf8'");
 
 //MySqli Select Query

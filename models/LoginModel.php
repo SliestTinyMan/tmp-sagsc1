@@ -6,7 +6,7 @@ class LoginModel
 
     public function __construct()
     {
-        $this->db=new mysqli('localhost', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
+        $this->db=new mysqli('intranet.tecnicom.pe:3306', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
         //$this->db=new mysqli('db-sag-sc1.cam4laqbbkeo.us-east-1.rds.amazonaws.com:3306', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
         $this->db->query("SET NAMES 'utf8'");
 

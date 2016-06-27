@@ -9,7 +9,7 @@ $telefono = $_POST["telefono"];
 $email = $_POST["email"];
 
 //$con=new mysqli("localhost", "root", "CC@i0f;&d=+r8I$", "re-lima1-mysql");
-$con=new mysqli('localhost', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
+$con=new mysqli('intranet.tecnicom.pe:3306', 'isysadm', '2H%Ws!E3cQ#K', 'db_sag_sc1');
 $con->query("SET NAMES 'utf8'");
 
 $sql =  "INSERT INTO usuarios (NOMBRE, DOCUMENTO, TELEFONO, EMAIL, CONFIRMADO, POR)
